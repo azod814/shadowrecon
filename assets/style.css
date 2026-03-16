@@ -1,0 +1,48 @@
+body{
+background:black;
+color:#00ff9c;
+font-family:monospace;
+margin:0;
+}
+
+.topbar{
+padding:10px;
+border-bottom:1px solid #00ff9c;
+}
+
+input{
+background:black;
+border:1px solid #00ff9c;
+color:#00ff9c;
+padding:5px;
+}
+
+button{
+background:#00ff9c;
+border:none;
+padding:6px 10px;
+cursor:pointer;
+}
+
+.container{
+display:flex;
+height:90vh;
+}
+
+.browser{
+flex:2;
+}
+
+.recon{
+flex:1;
+border-left:1px solid #00ff9c;
+padding:10px;
+overflow:auto;
+}
+
+iframe{
+width:100%;
+height:100%;
+border:none;
+background:white;
+}
