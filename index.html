@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ShadowRecon</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<input id="target" placeholder="Enter target domain">
+<button onclick="scan()">SCAN</button>
+</div>
+
+<div class="container">
+
+<div class="browser">
+<iframe id="webview"></iframe>
+</div>
+
+<div class="recon">
+
+<h3>IP Address</h3>
+<div id="ip"></div>
+
+<h3>Open Ports</h3>
+<div id="ports"></div>
+
+<h3>Pages Found</h3>
+<div id="pages"></div>
+
+</div>
+
+</div>
+
+<script src="renderer.js"></script>
+
+</body>
+
+</html>
