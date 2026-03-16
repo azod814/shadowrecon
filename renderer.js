@@ -45,3 +45,34 @@ log("[+] Technology detected")
 })
 
 }
+
+
+const ctx=document.getElementById("trafficChart")
+
+const chart=new Chart(ctx,{
+type:"line",
+data:{
+labels:[],
+datasets:[{
+label:"Traffic",
+data:[],
+borderColor:"#00ff9c"
+}]
+}
+})
+
+setInterval(()=>{
+
+let time=new Date().toLocaleTimeString()
+
+chart.data.labels.push(time)
+chart.data.datasets[0].data.push(Math.random()*100)
+
+if(chart.data.labels.length>15){
+chart.data.labels.shift()
+chart.data.datasets[0].data.shift()
+}
+
+chart.update()
+
+},2000)
